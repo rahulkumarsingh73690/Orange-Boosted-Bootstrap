@@ -9,27 +9,14 @@
 }
 
 .dropdown-toggle {
-  padding-right: $dropdown-padding-x; // Boosted mod
-  padding-left: $dropdown-padding-x; // Boosted mod
-  color: $dropdown-color; // Boosted mod
   white-space: nowrap;
-  background-color: $dropdown-bg; // Boosted mod
-  border-color: $dropdown-border-color; // Boosted mod
 
-  // Boosted mod: dark background
-  .bg-dark &:not(.dropdown-toggle-split),
-  .navbar-dark &:not(.dropdown-toggle-split) {
-    color: $dropdown-bg;
-    background-color: $dropdown-color;
-    border-color: $gray-700;
+  // Boosted mod: handle variants
+  --#{$variable-prefix}btn-padding-x: #{$dropdown-padding-x}; // Boosted mod
+  @include button-variant($dropdown-bg, $dropdown-border-color, $dropdown-color, $disabled-background: $dropdown-bg, $disabled-border: $gray-500, $disabled-color: $gray-500);
 
-    &:hover {
-      border-color: $dropdown-link-hover-color;
-    }
-  }
-
-  .btn-group &:not(.btn-inverse) {
-    border-color: $dropdown-color;
+  &.btn-inverse:not(.dropdown-toggle-split) {
+    @include button-variant($black, $gray-700, $white, $white, $white, $black, $primary, $primary, $black, transparent, $gray-700, $gray-700, $black);
   }
   // End mod
 
