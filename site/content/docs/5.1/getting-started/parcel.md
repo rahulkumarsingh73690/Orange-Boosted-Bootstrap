@@ -3,6 +3,8 @@ layout: docs
 title: Parcel
 description: Learn how to include Boosted in your project using Parcel.
 group: getting-started
+aliases:
+  - "/docs/getting-started/parcel/"
 toc: true
 ---
 

@@ -3,7 +3,8 @@ layout: docs
 title: Footer
 description: Documentation and examples for a powerful and responsive Boosted's footer. It includes support for branding, navigation and more.
 group: components
-aliases: "/docs/5.1/components/footer/"
+aliases:
+  - "/docs/components/footer/"
 toc: true
 ---
 

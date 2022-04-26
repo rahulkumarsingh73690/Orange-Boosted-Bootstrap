@@ -4,9 +4,10 @@ title: Introduction
 description: Get started with Boosted, based on Bootstrap, via CDN and a template starter page.
 group: getting-started
 aliases:
-  - "/docs/5.1/getting-started/"
-  - "/docs/getting-started/"
   - "/getting-started/"
+  - "/docs/getting-started/"
+  - "/docs/5.1/getting-started/"
+  - "/docs/getting-started/introduction/"
 toc: true
 ---
 

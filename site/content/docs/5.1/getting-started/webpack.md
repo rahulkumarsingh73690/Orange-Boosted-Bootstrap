@@ -3,6 +3,8 @@ layout: docs
 title: Webpack and bundlers
 description: Learn how to include Boosted in your project using Webpack or other bundlers.
 group: getting-started
+aliases:
+  - "/docs/getting-started/webpack/"
 toc: true
 ---
 
