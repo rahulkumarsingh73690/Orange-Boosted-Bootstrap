@@ -76,7 +76,7 @@
 .dropdown-toggle-split {
   padding-right: subtract($dropdown-padding-x, $btn-border-width); // Boosted mod
   padding-left: subtract($dropdown-padding-x, $btn-border-width); // Boosted mod
-  border-color: currentColor; // Boosted mod
+  border-color: currentcolor; // Boosted mod
 
   // Boosted mod
   .btn-group:not(.dropstart) &,
@@ -94,26 +94,24 @@
         content: "";
         background:
           linear-gradient(
-            currentColor $btn-border-width,
+            currentcolor $btn-border-width,
             transparent $btn-border-width,
             transparent map-get($spacers, 1),
-            currentColor map-get($spacers, 1),
-            currentColor subtract(100%, map-get($spacers, 1)),
+            currentcolor map-get($spacers, 1),
+            currentcolor subtract(100%, map-get($spacers, 1)),
             transparent subtract(100%, map-get($spacers, 1)),
             transparent subtract(100%, $btn-border-width),
-            currentColor subtract(100%, $btn-border-width)
+            currentcolor subtract(100%, $btn-border-width)
           );
       }
     }
   }
 
   .btn:active + &,
-  .btn.active + & {
+  .btn.active + &,
+  &:active + * + .btn,
+  &.active + * + .btn {
     border-color: $primary;
-
-    &:focus {
-      border-color: $black;
-    }
   }
 
   .btn-group.show > &:not(:focus):not(:active)::before {
