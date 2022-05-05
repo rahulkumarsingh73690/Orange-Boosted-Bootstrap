@@ -68,7 +68,7 @@ const PLACEMENT_TOPCENTER = 'top'
 const PLACEMENT_BOTTOMCENTER = 'bottom'
 
 const Default = {
-  offset: [0, 2],
+  offset: [0, 0],
   boundary: 'clippingParents',
   reference: 'toggle',
   display: 'dynamic',
